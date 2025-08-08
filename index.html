@@ -21,21 +21,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     />
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- swiper css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
     />
     <!-- style CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- navbar  start-->
-    <nav
-      class="navbar navbar-light bg-light shadow-sm navbar-expand-lg bg-body-tertiary"
-    >
+    <nav class="navbar navbar-light bg-light shadow-sm navbar-expand-lg bg-body-tertiary" data-aos="fade-down" data-aos-delay="100">
       <div class="container d-flex align-items-center justify-content-between">
-        <a class="navbar-brand-logo d-flex align-items-center me-auto" href="#">
+        <a class="navbar-brand logo d-flex align-items-center me-auto" href="#">
           <h1 class="fs-2 fw-bold mb-0">
             <span class="text-dark">YumFa</span
             ><span class="logo-span">ntasy</span>
@@ -52,10 +55,943 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- menu start-->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li><a href="#" class="nav-link active text-danger fs-5">Home</a></li>
+            <li><a href="#" class="nav-link text-secondary fs-5">About</a></li>
+            <li><a href="#" class="nav-link text-secondary fs-5">Services</a></li>
+            <li><a href="#" class="nav-link text-secondary fs-5">Blog</a></li>
+            <li><a href="#" class="nav-link text-secondary fs-5">Contact</a></li>
+          </ul>  
+        </div>
+        <div class="nav-btns d-none d-lg-flex align-items-center gap-4">
+          <i class="bi bi-bag fs-4 text-dark"></i>
+          <button class="btn btn-danger py-2 pz-3">Orden Online <i class="bi bi-cart-fill ms-1"></i></button>
+
+        </div>
       </div>
     </nav> <!-- navbar end -->
 
-    <!-- menu start-->
+    <!-- hero header star -->
+    <header class="hero">
+      <div class="container d-flex flex-column justify-content-center h-100">
+         <img src="Images/hero-shape-1.png" alt="" class="hero-shape-1 position-absolute top-0 start-0"> 
+         <img src="Images/hero-shape-2.png" alt="" class="hero-shape-2 position-absolute top-0 end-0 translate-middle-x">
+        <div class="swiper heroSwiper w-100">
+          <div class="swiper-wrapper">
+            <!-- slide 1 -->
+             <div class="swiper-slide">
+              <div class="hero-header">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 hero-content text-center text-lg-start">
+                    <h1>The Best Pizza <br>
+                    off the Town</h1>
+                    <p class="text-secondary my-2 herp-pera">Enjoy All Kinds of First Food iem with
+                      Full Appetite
+                      And Take Home Delivery
+                      During this Pandemic & Enjoy 5% Discount  </p>
+                    <div class="hero-dish-wrap d-flex align-items-center justify-content-center my-4 gap-2 rounded">
+                      <p class="hero-subtitle-name d-flex gap-2">
+                        Pizza <span>+</span>Cheese <span>+</span>Mushwoom fry<span>=</span>
+                      </p>
+                      <p class="hero-subtitle-price d-flex align-items-center justify-content-center flex-column ">
+                        Only <br>
+                        <span><small class="fw-normal fs-3 ">$</small>4.50</span>
+
+                      </p>
+                    </div>
+                    <div class="hero-buttom-content">
+                      <div class="hero-add-cart d-flex align-items-center justify-content-start">
+                        <span class="position-relative d-inline-flex align-items-center px-4 py-2 rounded-pill bg-dark text-white fs-5">
+                          <i class="bi bi-plus position-absolute top-50 translate-middle bg-white border border-primary rounded-circle text-primary d-flex justify-content-center align-items-center"></i>
+                          Add to Cart
+                        </span>
+                      </div>
+                      <div class="swiper-btns w-100 d-flex align-items-center justify-content-center px-4 py-4">
+                        <div class="swiper-button-prev  "><i class="ri-arrow-left-wide-line "></i>Previous</div>
+                        <div class="swiper-button-next  ">Next<i class="ri-arrow-right-wide-line "></i></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="hero-img">
+                      <img src="Images/hero-1.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+             </div>
+             <!-- slide 2 -->
+             <div class="swiper-slide">
+              <div class="hero-header">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 hero-content text-center text-lg-start">
+                    <h1>We Ensure That You <br>
+                    will Be Satisfied</h1>
+                    <p class="text-secondary my-2 herp-pera">Enjoy All Kinds of First Food iem with
+                      Full Appetite
+                      And Take Home Delivery
+                      During this Pandemic & Enjoy 5% Discount  </p>
+                    <div class="hero-dish-wrap d-flex align-items-center justify-content-center my-4 gap-2 rounded">
+                      <p class="hero-subtitle-name d-flex gap-2">
+                        Pizza <span>+</span>Cheese <span>+</span>Mushwoom fry<span>=</span>
+                      </p>
+                      <p class="hero-subtitle-price d-flex align-items-center justify-content-center flex-column ">
+                        Only <br>
+                        <span><small class="fw-normal fs-3 ">$</small>4.50</span>
+
+                      </p>
+                    </div>
+                    <div class="hero-buttom-content">
+                      <div class="hero-add-cart d-flex align-items-center justify-content-start">
+                        <span class="position-relative d-inline-flex align-items-center px-4 py-2 rounded-pill bg-dark text-white fs-5">
+                          <i class="bi bi-plus position-absolute top-50 translate-middle bg-white border border-primary rounded-circle text-primary d-flex justify-content-center align-items-center"></i>
+                          Add to Cart
+                        </span>
+                      </div>
+                      <div class="swiper-btns w-100 d-flex align-items-center justify-content-center px-4 py-4">
+                        <div class="swiper-button-prev ">
+                          <i class="ri-arrow-left-wide-line"></i>Previous
+                        </div>
+                           <div class="swiper-button-next ">Next
+                          <i class="ri-arrow-right-wide-line"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="hero-img">
+                      <img src="Images/hero-2.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+             </div>
+             <!-- slide 3 -->
+             <div class="swiper-slide">
+              <div class="hero-header">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 hero-content text-center text-lg-start">
+                    <h1>Best Combo Offer <br>
+                     You Satisfaction</h1>
+                    <p class="text-secondary my-2 herp-pera">Enjoy All Kinds of First Food iem with
+                      Full Appetite
+                      And Take Home Delivery
+                      During this Pandemic & Enjoy 5% Discount  </p>
+                    <div class="hero-dish-wrap d-flex align-items-center justify-content-center my-4 gap-2 rounded">
+                      <p class="hero-subtitle-name d-flex gap-2">
+                        Pizza <span>+</span>Cheese <span>+</span>Mushwoom fry<span>=</span>
+                      </p>
+                      <p class="hero-subtitle-price d-flex align-items-center justify-content-center flex-column ">
+                        Only <br>
+                        <span><small class="fw-normal fs-3 ">$</small>4.50</span>
+
+                      </p>
+                    </div>
+                    <div class="hero-buttom-content">
+                      <div class="hero-add-cart d-flex align-items-center justify-content-start">
+                        <span class="position-relative d-inline-flex align-items-center px-4 py-2 rounded-pill bg-dark text-white fs-5">
+                          <i class="bi bi-plus position-absolute top-50 translate-middle bg-white border border-primary rounded-circle text-primary d-flex justify-content-center align-items-center"></i>
+                          Add to Cart
+                        </span>
+                      </div>
+                      <div class="swiper-btns w-100 d-flex align-items-center justify-content-center px-4 py-4">
+                        <div class="swiper-button-prev ">
+                          <i class="ri-arrow-left-wide-line"></i>Previous
+                        </div>
+                           <div class="swiper-button-next ">Next
+                          <i class="ri-arrow-right-wide-line"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="hero-img">
+                      <img src="Images/hero-3.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </header><!-- hero header end -->
+
+    <!-- Top Dished start -->
+     <div class="container top-dishes">
+      <div class="row g-md-3 g-sm-3 g-0">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="top-dish-wrap bg-dark text-white d-flex align-items-center justify-content-center gap-4 py-5 pb-3 rounded">
+            <div class="top-dish-img">
+              <img src="Images/quick-item-1.png" alt="" class="img-fluid">
+            </div>
+            <div class="top-dish-content">
+              <h2 class="fs-3">Crispy & spicy <br>Chicken Burger</h2>
+              <p class="text-secondary"> start At <span class="text-white">$5.50</span></p>
+              <a href="#" class="btn bg-white px-3 py-0">Order Now<i class="bi bi-basket3 ms-2"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <div class="top-dish-wrap bg-dark text-white d-flex align-items-center justify-content-center gap-4 py-5 pb-3 rounded">
+            <div class="top-dish-img">
+              <img src="Images/quick-item-2.png" alt="" class="img-fluid">
+            </div>
+            <div class="top-dish-content">
+              <h2 class="fs-3">Chesy Hot <br>Yumy Pizza</h2>
+              <p class="text-secondary"> start At <span class="text-white">$5.50</span></p>
+              <a href="#" class="btn bg-white px-3 py-0">Order Now<i class="bi bi-basket3 ms-2"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+     </div>
+
+     <!-- Combo Pricing -->
+
+     <div class="combo-pricing-container mt-5 pt-5 pb-5 text-white">
+      <div class="combo-pricing">
+        <div class="section-title d-flex flex-column align-items-center justify-content-center gap-2" data-aos="fade-down" data-aos-delay="100">
+          <span>Combos</span>
+          <h2 class="color-white text-center">Our Best Combos to Choose</h2>
+        </div>
+        <div class="container mt-5 pt-5 mb-5 pb-5">
+          <div class="combo-grid d-flex flex-wrap flex-lg-nowrap gap-3 gap-lg-0">
+            <!-- col 1 -->
+             <div class="col-sm-6 col-md-5 col-lg-3 combo-card d-flex flex-column justify-content-center align-items-center position-relative me-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="combo-offer d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-50">
+                <span>Only At</span>
+                <h3>$30.91</h3>
+              </div>
+              <h2>Combo 1</h2>
+              <span class="fs-5 mt-1">2 Burguers</span>
+              <span class="fs-5 mt-1">2 Drinks</span>
+              <span class="fs-5 mt-1">Nachos</span>
+              <span class="fs-5 mt-1">Frenchs Fries</span>
+              <button class="btn btn-danger mt-3"> Order Now <i class="bi bi-basket3"></i></button>
+              <img src="Images/combo-1.png" alt="" class="img-fluid position-absolute bottom-0 start-50 ">
+
+             </div>
+
+             <!-- col 2 -->
+             <div class="col-sm-6 col-md-5 col-lg-3 combo-card d-flex flex-column justify-content-center align-items-center position-relative me-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="combo-offer d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-50">
+                <span>Only At</span>
+                <h3>$19.90</h3>
+              </div>
+              <h2>Combo 2</h2>
+              <span class="fs-5 mt-1">2 Burguers</span>
+              <span class="fs-5 mt-1">2 Drinks</span>
+              <span class="fs-5 mt-1">Nachos</span>
+              <span class="fs-5 mt-1">Frenchs Fries</span>
+              <button class="btn btn-danger mt-3"> Order Now <i class="bi bi-basket3"></i></button>
+              <img src="Images/combo-2.png" alt="" class="img-fluid position-absolute bottom-0 start-50 ">
+
+             </div>
+
+             <!-- col 3 -->
+             <div class="col-sm-6 col-md-5 col-lg-3 combo-card d-flex flex-column justify-content-center align-items-center position-relative me-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="combo-offer d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-50">
+                <span>Only At</span>
+                <h3>$40.91</h3>
+              </div>
+              <h2>Combo 3</h2>
+              <span class="fs-5 mt-1">2 Burguers</span>
+              <span class="fs-5 mt-1">2 Drinks</span>
+              <span class="fs-5 mt-1">Nachos</span>
+              <span class="fs-5 mt-1">Frenchs Fries</span>
+              <button class="btn btn-danger mt-3"> Order Now <i class="bi bi-basket3"></i></button>
+              <img src="Images/combo-3.png" alt="" class="img-fluid position-absolute bottom-0 start-50 ">
+
+             </div>
+
+             <!-- col 4-->
+             <div class="col-sm-6 col-md-5 col-lg-3 combo-card d-flex flex-column justify-content-center align-items-center position-relative me-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="combo-offer d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-50">
+                <span>Only At</span>
+                <h3>$50.91</h3>
+              </div>
+              <h2>Combo 4</h2>
+              <span class="fs-5 mt-1">2 Burguers</span>
+              <span class="fs-5 mt-1">2 Drinks</span>
+              <span class="fs-5 mt-1">Nachos</span>
+              <span class="fs-5 mt-1">Frenchs Fries</span>
+              <button class="btn btn-danger mt-3"> Order Now <i class="bi bi-basket3"></i></button>
+              <img src="Images/combo-4.png" alt="" class="img-fluid position-absolute bottom-0 start-50 ">
+
+             </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+     </div>
+
+     <!-- our menu -->
+
+     <section class="our-menu">
+         <div class="section-title d-flex flex-column align-items-center justify-content-center gap-2" data-aos="fade-down" data-aos-delay="100">
+          <span>Menu</span>
+          <h2 class="color-white text-center">Just Choose From The Best</h2>
+        </div>
+
+        <!-- menu swiper -->
+
+        <div class="container mt-5 pt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-swiper d-flex justify-content-center align-items-center">
+            <div class="swiper menuSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                  <div class="slide-menu-box burger-menu d-flex flex-column justify-content-center align-items-center">
+                    <div class="slide-menu-img d-flex justify-content-center align-items-center shadow-sm">
+                      <img src="Images/menu-1.png" alt="" class="img-fluid">
+                    </div>
+                    <p class="pt-2">BURGER</p>
+                  </div>
+                </div>
+
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                  <div class="slide-menu-box pizza-menu d-flex flex-column justify-content-center align-items-center">
+                    <div class="slide-menu-img d-flex justify-content-center align-items-center shadow-sm">
+                      <img src="Images/menu-2.png" alt="" class="img-fluid">
+                    </div>
+                    <p class="pt-2">PIZZA</p>
+                  </div>
+                </div>
+
+                <!-- slide 3 -->
+                <div class="swiper-slide">
+                  <div class="slide-menu-box sandwich-menu d-flex flex-column justify-content-center align-items-center">
+                    <div class="slide-menu-img d-flex justify-content-center align-items-center shadow-sm">
+                      <img src="Images/menu-3.png" alt="" class="img-fluid">
+                    </div>
+                    <p class="pt-2">SANDWICH</p>
+                  </div>
+                </div>
+
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                  <div class="slide-menu-box shake-menu d-flex flex-column justify-content-center align-items-center">
+                    <div class="slide-menu-img d-flex justify-content-center align-items-center shadow-sm">
+                      <img src="Images/menu-4.png" alt="" class="img-fluid">
+                    </div>
+                    <p class="pt-2">SHAKE</p>
+                  </div>
+                </div>
+
+                <!-- slide 5 -->
+                <div class="swiper-slide">
+                  <div class="slide-menu-box ice-cream-menu d-flex flex-column justify-content-center align-items-center">
+                    <div class="slide-menu-img d-flex justify-content-center align-items-center shadow-sm">
+                      <img src="Images/menu-5.png" alt="" class="img-fluid">
+                    </div>
+                    <p class="pt-2">ICE CREAM</p>
+                  </div>
+                </div>
+
+                <!-- slide 6 -->
+                <div class="swiper-slide">
+                  <div class="slide-menu-box dessert-menu d-flex flex-column justify-content-center align-items-center">
+                    <div class="slide-menu-img d-flex justify-content-center align-items-center shadow-sm">
+                      <img src="Images/menu-6.png" alt="" class="img-fluid">
+                    </div>
+                    <p class="pt-2">DESSERT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Dishes Swiper -->
+
+        <div class="container dishes-swiper mt-5" data-aos="fade-up" data-aos-delay="300">
+          <!-- burguer swiper -->
+          <div class="burger-swiper w-100">
+            <div class="swiper disheSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Beefka Burger</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/burger-slider-1.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 2 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Mexican Burger</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/burger-slider-2.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 3 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Double Burger</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/burger-slider-3.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 4 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Royal Burger</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/burger-slider-4.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 5 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Four Burger</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/burger-slider-5.png" alt="">
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Pizza swiper -->
+          <div class="pizza-swiper w-100">
+            <div class="swiper disheSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza American</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$18.99</h3>
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/pizza-slider-1.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 2 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Chesse Pizza</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$17.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/pizza-slider-2.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 3 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Italy</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$19.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/pizza-slider-3.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 4 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Double</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/pizza-slider-4.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 5 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Napoly</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/pizza-slider-5.png" alt="">
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- sandwich swiper -->
+          <div class="sandwich-swiper w-100">
+            <div class="swiper disheSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Sandwich American</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$18.99</h3>
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/sandwitch-slider-1.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 2 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Chesse Sandwich</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$17.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/sandwitch-slider-2.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 3 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Sandwich Italy</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$19.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/sandwitch-slider-3.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 4 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Sandwich Double</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/sandwitch-slider-4.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 5 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Sandwich Napoly</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/sandwitch-slider-5.png" alt="">
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shake swiper -->
+          <div class="shake-swiper w-100">
+            <div class="swiper disheSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza American</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$18.99</h3>
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/shake-slider-1.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 2 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Chesse Pizza</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$17.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/shake-slider-2.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 3 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Italy</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$19.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/shake-slider-3.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 4 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Double</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/shake-slider-4.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 5 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Napoly</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/shake-slider-5.png" alt="">
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ice Cream swiper -->
+          <div class="ice-cream-swiper w-100">
+            <div class="swiper disheSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza American</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$18.99</h3>
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/icecream-slider-1.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 2 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Chesse Pizza</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$17.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/icecream-slider-2.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 3 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Italy</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$19.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/icecream-slider-3.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 4 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Double</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/icecream-slider-4.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 5 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Napoly</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/icecream-slider-5.png" alt="">
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dessert swiper -->
+          <div class="dessert-swiper w-100">
+            <div class="swiper disheSwiper p-3">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza American</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$18.99</h3>
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/dessert-slider-1.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 2 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Chesse Pizza</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$17.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/dessert-slider-2.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 3 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Italy</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$19.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/dessert-slider-3.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 4 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Double</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/dessert-slider-4.png" alt="">
+                  </div>
+                 </div>
+
+                 <!-- slide 5 -->
+                 <div class="swiper-slide">
+                  <div class="dish-card d-flex flex-column justify-content-center align-items-center">
+                    <h2>Pizza Napoly</h2>
+                    <p class="text-center">This Mexican Style Burger is pumped out with flavor from chilli powder, cilantro & jalapeno ppaper.</p>
+                    <h3 class="dish-price">$20.99</h3>
+                    <!-- <button class="btn">Add To Cart <i class="bi bi-basket3"></i></button> -->
+                    <button class="btn rounded-pill mt-3"> Add To Cart <i class="bi bi-basket3"></i></button>
+                    <img src="Images/dessert-slider-5.png" alt="">
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+
+     <!-- Personalized Item -->
+
+     <section class="personalized-item position-relative">
+      <div class="section-title d-flex flex-column align-items-center justify-content-center gap-2" data-aos="fade-down" data-aos-delay="100">
+          <span>Personalized Item</span>
+          <h2 class="color-white text-center">Build Your Own Favourite Item</h2>
+        </div>
+        <div class="container mt-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="item-wrapper d-flex flex-column gap-2" id="accordionItems">
+                <!-- Item 1 -->
+                 <div class="item-col d-flex flex-column">
+                  <div class="item-head-box d-flex justify-content-between align-items-center p-3 text-dark bg-light" data-bs-toggle="collapse" data-bs-target="#itemchoice1" aria-expanded="false">
+                    <h2>Choose Your Bun</h2>
+                    <i class="ri-arrow-down-s-line fs-3"></i>
+                  </div>
+                  <div id="itemchoice1" class="collapse item-boxs p-3 bg-secondary-subtle " data-bs-parent="#accordionItems">
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Soft Cheesy Bun</h3>
+                      <h3>$2.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Milk Bun</h3>
+                      <h3>$1.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Garlic Butter Special Bun</h3>
+                      <h3>$5.50</h3>
+                    </div>
+                  </div>
+                 
+                 </div>
+
+                 <!-- Item 2 -->
+                 <div class="item-col d-flex flex-column">
+                  <div class="item-head-box d-flex justify-content-between align-items-center p-3 text-dark bg-light" data-bs-toggle="collapse" data-bs-target="#itemchoice2" aria-expanded="false">
+                    <h2>Choose Patty</h2>
+                    <i class="ri-arrow-down-s-line fs-3"></i>
+                  </div>
+                  <div id="itemchoice2" class="collapse item-boxs p-3 bg-secondary-subtle " data-bs-parent="#accordionItems">
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Soft Cheesy Patty</h3>
+                      <h3>$2.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Milk Patty</h3>
+                      <h3>$1.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Garlic Butter Special Patty</h3>
+                      <h3>$5.50</h3>
+                    </div>
+                  </div>
+                 
+                 </div>
+
+                 <!-- Item 3 -->
+                 <div class="item-col d-flex flex-column">
+                  <div class="item-head-box d-flex justify-content-between align-items-center p-3 text-dark bg-light" data-bs-toggle="collapse" data-bs-target="#itemchoice3" aria-expanded="false">
+                    <h2>Choose Burger</h2>
+                    <i class="ri-arrow-down-s-line fs-3"></i>
+                  </div>
+                  <div id="itemchoice3" class="collapse item-boxs p-3 bg-secondary-subtle " data-bs-parent="#accordionItems">
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Soft Cheesy Burger</h3>
+                      <h3>$2.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Milk Burger</h3>
+                      <h3>$1.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Garlic Butter Burger</h3>
+                      <h3>$5.50</h3>
+                    </div>
+                  </div>
+                 
+                 </div>
+
+                 <!-- Item 4 -->
+                 <div class="item-col d-flex flex-column">
+                  <div class="item-head-box d-flex justify-content-between align-items-center p-3 text-dark bg-light" data-bs-toggle="collapse" data-bs-target="#itemchoice4" aria-expanded="false">
+                    <h2>No Off Patty</h2>
+                    <i class="ri-arrow-down-s-line fs-3"></i>
+                  </div>
+                  <div id="itemchoice4" class="collapse item-boxs p-3 bg-secondary-subtle " data-bs-parent="#accordionItems">
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Soft Cheesy Bun</h3>
+                      <h3>$2.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Milk Bun</h3>
+                      <h3>$1.50</h3>
+                    </div>
+
+                    <div class="item-box d-flex justify-content-between border-bottom py-2">
+                      <h3>Garlic Butter Special Bun</h3>
+                      <h3>$5.50</h3>
+                    </div>
+                  </div>
+                 
+                 </div>
+              </div>
+              <button class="btn place-order w-100 mt-3">Place Order</button>
+            </div>
+            <div class="col-lg 6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="item-img">
+                <img src="Images/build-burger.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="Images/header-shape-1.png" class="img-fluid item-section-img1 position-absolute" alt="">
+        <img src="Images/header-shape-2.png" class="img-fluid item-section-img2 position-absolute" alt="">
+        <img src="Images/header-shape-3.png" class="img-fluid item-section-img3 position-absolute" alt="">
+        <img src="Images/header-shape-1.png" class="img-fluid item-section-img4 position-absolute" alt="">
+     </section>
+
+     <!-- Banner -->
+
+     <section class="banner bg-dark">
+      <div class="container">
+        <div class="row align-items-center g-0 g-md-5">
+          <div class="col-lg-7 d-flex">
+            <div class="col-lg-4 d-flex">
+              <img src="Images/mobile-shape-2.png" class="img-fluid mobile-shape-1" alt="">
+            </div>
+            <div class="img-rider position-relative">
+              <img src="Images/rider.png" class="img-fluid" alt="">
+              <img src="Images/road-shadow.png" class="img-fluid position-absolute top-100 start-100" alt="">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="banner-content text-white d-flex gap-2 align-items-end justify-content-end flex-column ">
+              <h2 class="text-end"> Download Our App & Order Online To Get Free Delivery</h2>
+              <p class="text-end"> We are the contry's no.1 Fast food retailer with 15+ year of reputation.
+                Country's best burger and pizza are delivered by us. We gain the satisfaction of our customers
+                with our delicate service and extreme high food quality.</p>
+                <div class="banner-btns d-flex gap-3">
+                  <button class="btn text-white">Download from <i class="bi bi-google-play"></i></button>
+                  <button class="btn text-white">Download from <i class="bi bi-apple"></i></button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+     
+
+     
+
+
+
+
+     <!-- hero header end -->
+
+    
 
 
 
@@ -99,12 +1035,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- swiper slider js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-    <!-- AOS CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <!-- style CSS -->
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+    <!-- scrpt js -->
     <script src="/js/script.js"></script>
   </body>
 </html>
