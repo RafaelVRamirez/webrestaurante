@@ -1143,3 +1143,7 @@ footer .container .row>div h2{
     font-size: 1rem;
     transition: var(--transition-regular);
 }
+
+.footer-bottom p a:hover{
+    color: var(--secondary-color) !important;
+}

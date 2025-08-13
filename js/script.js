@@ -8,9 +8,9 @@ var swiper = new Swiper('.heroSwiper',{
     spaceBetween: 10,
     loop: true,
     speed: 1000,
-    autoplay:{
-       delay: 2000,
-    },
+    // autoplay:{
+    //    delay: 2000,
+    // },
     navigation:{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -87,7 +87,9 @@ var swiper = new Swiper('.disheSwiper',{
     spaceBetween: 30,
     speed: 1000,
     loop: true,
-    
+    autoplay:{
+        delay: 2000,
+    },
 
     breakpoints:{
         1400:{slidesPerView: 3,},
