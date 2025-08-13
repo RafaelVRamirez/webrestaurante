@@ -8,12 +8,12 @@ var swiper = new Swiper('.heroSwiper',{
     spaceBetween: 10,
     loop: true,
     speed: 1000,
-    //autoplay:{
-    //    delay: 2000,
-    //},
+    autoplay:{
+       delay: 2000,
+    },
     navigation:{
-        nextE1: '.swiper-button-next',
-        prevE1: '.swiper-button.prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 
 
@@ -87,6 +87,7 @@ var swiper = new Swiper('.disheSwiper',{
     spaceBetween: 30,
     speed: 1000,
     loop: true,
+    
 
     breakpoints:{
         1400:{slidesPerView: 3,},
@@ -96,8 +97,6 @@ var swiper = new Swiper('.disheSwiper',{
         575:{slidesPerView: 1,},
         0:{slidesPerView: 1,},
     }
-
-
 });
 
 //All Dishes Swiper Show & Hide
@@ -185,4 +184,26 @@ dessertMenu.addEventListener('click', () =>{
     shakeSwiper.style.display = 'none';
     iceCreamSwiper.style.display = 'none';
 
+});
+
+
+// Review Swiper Slider
+
+var swiper = new Swiper('.reviewSwiper',{
+    slidesPerView: 3,
+    spaceBetween: 30,
+    speed: 1000,
+    loop: true,
+    autoplay:{
+        delay: 2000,
+    },
+
+    breakpoints:{
+        1400:{slidesPerView: 3,},
+        1000:{slidesPerView: 3,},
+        991:{slidesPerView: 2,},
+        767:{slidesPerView: 1,},
+        575:{slidesPerView: 1,},
+        0:{slidesPerView: 1,},
+    }
 });
